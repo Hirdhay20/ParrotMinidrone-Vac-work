@@ -3,7 +3,7 @@ This project aimed to explore the different hardware and control system capabili
 
 ## Table-of-Contents
 * [Task-To-Achieve](#Task-To-Achieve)
-* [Required Software](#Required Software)
+* [Required-Software](#Required-Software)
 * [How-it-works](#How-it-works)
   - [Path-Planning-Set-Up](#Path-Planning-Set-Up)
   - [Simulation-Set-Up](#Simulation-Set-Up)
@@ -13,7 +13,7 @@ This project aimed to explore the different hardware and control system capabili
 * [Resources](#Resources)
   
 
-## Required Software
+## Required-Software
 * Required Software:
  - MATLAB
  - Simulink
@@ -75,10 +75,10 @@ This script has all the email preferences and sends the email with the attached 
     ![Function](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20101237.png)
 
 * External Code Requirements
- - Open the scripts with the names checkAndSend3 and sendRedAlert.
- - Enter the necessary ThingSpeak data into the checkAndSend3 script.
- - In the sendRedAlert script enter your email address for "Sender" and your app password for "Password".
- - You can further edit the sendmail function to have a custom subject and body.
+  - Open the scripts with the names checkAndSend3 and sendRedAlert.
+  - Enter the necessary ThingSpeak data into the checkAndSend3 script.
+  - In the sendRedAlert script enter your email address for "Sender" and your app password for "Password".
+  - You can further edit the sendmail function to have a custom subject and body.
 ## Resources
 * Gmail App password setup : https://proximatesolutions.com/how-to-set-up-smtp-using-google-app-passwords/
 

@@ -4,6 +4,14 @@ This project aimed to explore the different hardware and control system capabili
 ## Table-of-Contents
 -[Task-To-Achieve](#Task-To-Achieve)
 
+## Required Software
+* Required Software:
+ - MATLAB
+ - Simulink
+ - Stateflow
+ - Image Processing
+
+
 ## Task-To-Achieve
 * The drone is to hover at a height of 1 meter.
 * It is then tasked to survey a 9m^2 area for a red object while maintaining a height of 1 meter.
@@ -44,7 +52,10 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
  ![ThingSpeak](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20105029.png)
 
 ### Email-Transmission
-The email sending technique requires the editing of the model properties this can be found in Modelling within the tool bar. 
+#### Files in use 
+
+
+#### Setup
 * Start Function
   - Select "Model Settings" and click Model Properties.
   - Locate the Callbacks tab and enter the following code in the start function and apply.

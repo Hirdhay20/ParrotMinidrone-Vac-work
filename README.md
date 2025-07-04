@@ -50,8 +50,12 @@ The email sending technique requires the editing of the model properties this ca
   - locate the Callbacks tab and enter the following code in the start function and apply.
     
     ![Function](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20101237.png)
-*External Code
- - 
+
+* External Code Requirements
+ - Open the scripts with the names checkAndSend3 and sendRedAlert.
+ - Enter the necessary ThingSpeak data into the checkAndSend3 script.
+ - In the sendRedAlert script enter your email address for "Sender" and your app password for "Password".
+
     
   
 

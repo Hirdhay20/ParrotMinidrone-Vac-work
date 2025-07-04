@@ -32,6 +32,16 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
 * There should be a pre-made heading called "Blue Marker"
   - You can edit it's colour by navigating to the subsection of the heading select "children" -> "Shape" -> "Appearance" -> "Material".
   - Here you can edit the parameters regarding the colour gradients creating the desired shade of red you require to test.
+### ThingSpeak
+* You will need to setup a ThingSpeak Channel with a singular field to act as a trigger for the email refer to the video on how to setup a ThingSpeak channel:
+  https://www.bing.com/videos/riverview/relatedvideo?&q=thingspeak+set+up+guide&&mid=9001F561A9BC9A7367069001F561A9BC9A736706&&FORM=VRDGAR
+* Within the image processing block there will be a ThingSpeak block. Double click the block to configure it.
+* Enter your ThingSpeak Channel Details:
+  - ChannelID: The numeric ID of your ThingSpeak channel.
+  - Write API Key: Found undr your channel's API Keys tab (must be a Write Key, not Read Key)
+* Set your sample time to 0.2 and the maximum missed ticks to 1000.
+ ![ThingSpeak]()
+
 ### Email-Transmission
 The email sending technique requires the editing of the model properties this can be found in Modelling within the tool bar. 
 * Start Function

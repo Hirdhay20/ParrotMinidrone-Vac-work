@@ -35,11 +35,7 @@ The email sending technique requires the editing of the model properties this ca
   - Select "Model Settings" and click Model Properties.
   - locate the Callbacks tab and enter the following code in the start function and apply.
   - Code:
-    1. t = timer;
-    2. t.ExecutionMode = "fixedSpacing";
-    3. t.Period = 1;
-    4. t.TimerFcn = @checkAndSend3;
-    5. start(t);
+    
   
 
 

@@ -39,6 +39,8 @@ The email sending technique requires the editing of the model properties this ca
   - locate the Callbacks tab and enter the following code in the start function and apply.
     
     ![Function](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20101237.png)
+*External Code
+ - 
     
   
 

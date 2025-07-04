@@ -30,6 +30,17 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
   - You can edit it's colour by navigating to the subsection of the heading select "children" -> "Shape" -> "Appearance" -> "Material".
   - Here you can edit the parameters regarding the colour gradients creating the desired shade of red you require to test.
 ### Email-Transmission
-* 
+The email sending technique requires the editing of the model properties this can be found in Modelling within the tool bar. 
+* Start Function
+  - Select "Model Settings" and click Model Properties.
+  - locate the Callbacks tab and enter the following code in the start function and apply.
+  - Code:
+    t = timer;
+    t.ExecutionMode = "fixedSpacing";
+    t.Period = 1;
+    t.TimerFcn = @checkAndSend3;
+    start(t);
+  
+
 
  

@@ -10,10 +10,26 @@ This project aimed to explore the different hardware and control system capabili
 * Once the red object is detected the drone is to hover above set object for 10 seconds and simultaneously send an email to the user indicating an object has been detected.
 * After detection the drone is to return back to its starting point.
 
-## How it works
+## How-it-works
 Launch the Parrot Mambo Mini-drone competition Simulink package utilising the file above (parrotMinidroneCompetition) which can be accessed within the matlab interface. 
-### Path Planning
-* Within the file the path planning is found within the control system block which can be obtained from the flight control system block which is orange in colour.
+### Path-Planning-Set-Up
+* After opening the file navigate to Simulink window.
+* The path planning is found within the control system block as a stateflow, which can be obtained from the flight control system block abdopting an orange colour.
 * The path plan uses an iterative approach cycling through 14 points within a 14 by 2 matrix of waypoints containing X and Y coordinates for the drone to follow.
+* The waypoints file above is to be imported to the workspace as a Numeric Matrix and is then to be assigned to the variable " U ".
+### Simulation-Set-Up
+* For the set up of the simultion navigate to the workspace window.
+* Select Project Shortcuts in the tool bar and open track builder.
+* A new window will open with a corrdinate system, proceed to load in the waypoints and a track should be built on the right.
+* Enter a desired Hex colour that's not red and then select "Update Virtual World"
+* Once all the above is done it should show in the  Virtual World.
+### Virtual-World-Editor
+* On the Virtual World pane select the icon to the left f the camera icon.
+* Select edit once the editor wido opens and edit the translation coordinates of the cage so it doesn't intefere with the simulation.
+* There should be a pre-made heading called "Blue Marker"
+  - You can edit it's colour by navigating to the subsection of the heading select "children" -> "Shape" -> "Appearance" -> "Material".
+  - Here you can edit the parameters regarding the colour gradients creating the desired shade of red you require to test.
+### Email-Transmission
 * 
+
  

@@ -2,7 +2,7 @@
 function sendRedAlert(imgName)
 
 
-setpref('Internet','E_mail','monkeydavids105@gmail.com')
+setpref('Internet','E_mail','Sender')
 setpref('Internet', 'SMTP_Server','smtp.gmail.com');
 setpref('Internet','SMTP_Username','Sender');
 setpref('Internet','SMTP_Password','Password');

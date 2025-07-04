@@ -25,6 +25,7 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
 * A new window will open with a corrdinate system, proceed to load in the waypoints and a track should be built on the right.
 * Enter a desired Hex colour that's not red and then select "Update Virtual World"
 * Once all the above is done it should show in the  Virtual World.
+ ![Virtual World]()
 ### Virtual-World-Editor
 * On the Virtual World pane select the icon to the left of the camera icon.
 * Select edit once the editor window opens and edit the translation coordinates of the cage so it doesn't intefere with the simulation.

@@ -34,7 +34,7 @@ The email sending technique requires the editing of the model properties this ca
 * Start Function
   - Select "Model Settings" and click Model Properties.
   - locate the Callbacks tab and enter the following code in the start function and apply.
-  - Code:
+  - Code: ![Function]()
     
   
 

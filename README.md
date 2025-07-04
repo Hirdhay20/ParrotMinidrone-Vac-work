@@ -15,10 +15,10 @@ This project aimed to explore the different hardware and control system capabili
 
 ## Required-Software
 * Required Software:
- - MATLAB
- - Simulink
- - Stateflow
- - Image Processing
+  - MATLAB
+  - Simulink
+  - Stateflow
+  - Image Processing
 
 
 ## Task-To-Achieve

@@ -2,7 +2,16 @@
 This project aimed to explore the different hardware and control system capabilities of the Parrot Mambo Mini-drone. Within this project we developed our undertsnading of Vision-based Autonomous Control systems via the utilisation of the Built in Parrot Mambo Mini-drone Simulink package. This further led to the development of a technique to detect for objets in real-time and send a notification alerting the user.
 
 ## Table-of-Contents
--[Task-To-Achieve](#Task-To-Achieve)
+* [Task-To-Achieve](#Task-To-Achieve)
+* [Required Software](#Required Software)
+* [How-it-works](#How-it-works)
+  - [Path-Planning-Set-Up](#Path-Planning-Set-Up)
+  - [Simulation-Set-Up](#Simulation-Set-Up)
+  - [Virtual-World-Editor](#Virtual-World-Editor)
+  - [ThingSpeak](#ThingSpeak)
+  - [Email-Transmission](#Email-Transmission)
+* [Resources](#Resources)
+  
 
 ## Required Software
 * Required Software:
@@ -52,8 +61,11 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
  ![ThingSpeak](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20105029.png)
 
 ### Email-Transmission
-#### Files in use 
-
+#### Scripts in use 
+* checkAndSend3.m
+This script is used to detect for a ThingSpeak field change. Once the change is initiated by the presence of a red object a screenshot is taken of the RGB viewer (make sure to full screen the viewer so it opens on launch). This screenshot is saved to the computer as a variable and is used as the input for the next script.
+* sendRedAlert.m
+This script has all the email preferences and sends the email with the attached image obtained from the previous script. 
 
 #### Setup
 * Start Function
@@ -66,6 +78,9 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
  - Open the scripts with the names checkAndSend3 and sendRedAlert.
  - Enter the necessary ThingSpeak data into the checkAndSend3 script.
  - In the sendRedAlert script enter your email address for "Sender" and your app password for "Password".
+ - You can further edit the sendmail function to have a custom subject and body.
+## Resources
+* Gmail App password setup : https://proximatesolutions.com/how-to-set-up-smtp-using-google-app-passwords/
 
     
   

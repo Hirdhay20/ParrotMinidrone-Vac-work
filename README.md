@@ -1,4 +1,4 @@
-# ParrotMamboMini-drone-Vac-work
+# RedDetection-Vac-work
 This project aimed to explore the different hardware and control system capabilities of the Parrot Mambo Mini-drone. Within this project we developed our undertsnading of Vision-based Autonomous Control systems via the utilisation of the Built in Parrot Mambo Mini-drone Simulink package. This further led to the development of a technique to detect for objets in real-time and send a notification alerting the user.
 
 ## Table-of-Contents

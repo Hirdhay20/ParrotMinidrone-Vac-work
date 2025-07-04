@@ -4,7 +4,7 @@ This project aimed to explore the different hardware and control system capabili
 ## Table-of-Contents
 -[Task To Achieve](#Task-To-Achieve)
 
-##Task-To-Achieve
-*The drone is to hover at a height of 1 meter.
-*It is then tasked to survey a 9m^2 area for a red object while maintaing a height of 1 meter.
-*Once the red object is detected the drone is to hover above set object for 10 seconds and simultaneously send an email to the user indicating an object has been detected. 
+## Task-To-Achieve
+* The drone is to hover at a height of 1 meter.
+* It is then tasked to survey a 9m^2 area for a red object while maintaing a height of 1 meter.
+* Once the red object is detected the drone is to hover above set object for 10 seconds and simultaneously send an email to the user indicating an object has been detected. 

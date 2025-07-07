@@ -34,6 +34,7 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
 * The path planning is found within the control system block as a stateflow, which can be obtained from the flight control system block adopting an orange colour.
 * The path plan uses an iterative approach cycling through 14 points within a 14 by 2 matrix of waypoints containing X and Y coordinates for the drone to follow.
 * The waypoints file above is to be imported to the workspace as a Numeric Matrix and is then to be assigned to the variable " U ".
+* Then in the command window put U = U*1.17;
  ![Waypoints](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20102342.png)
   
 ### Simulation-Set-Up
@@ -42,6 +43,7 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
 * A new window will open with a corrdinate system, proceed to load in the waypoints and a track should be built on the right.
 * Enter a desired Hex colour that's not red and then select "Update Virtual World"
 * Once all the above is done it should show in the  Virtual World.
+* In the command window type TFinal = 200; to change the simulation run time. 
  ![Virtual World](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20102615.png)
 ### Virtual-World-Editor
 * On the Virtual World pane select the icon to the left of the camera icon.

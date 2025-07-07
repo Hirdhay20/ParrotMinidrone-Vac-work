@@ -12,5 +12,5 @@ props.setProperty('mail.smtp.socketFactory.class','javax.net.ssl.SSLSocketFactor
 props.setProperty('mail.smtp.socketFactory.port','465');
 props.setProperty('mail.smtp.starttls.enable','true');
 props.setProperty('mail.smtp.starttls.enable','true');
-sendmail('Recipient','detected red','Red object has been detected', imgName);
+sendmail('Recipient','Detected red','Red object has been detected by the drone', imgName);
 end

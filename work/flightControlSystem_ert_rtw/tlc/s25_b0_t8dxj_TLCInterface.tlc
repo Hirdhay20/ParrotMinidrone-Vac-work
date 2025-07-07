@@ -1,0 +1,342 @@
+%implements s25_b0_t8dxj_TLCInterface "C"
+
+%function getInputAddr_17_3_5_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.mxrolt0xbk" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_17_3_5_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.mxrolt0xbk" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_17_3_5_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.f5ddv0mfst"
+%endfunction
+
+%function getDWork_17_3_5_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.f5ddv0mfst"
+%endfunction
+
+%function getInputAddr_17_5_5_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getInput_17_5_5_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getDWorkAddr_17_5_5_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.lejzvzw2zo"
+%endfunction
+
+%function getDWork_17_5_5_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.lejzvzw2zo"
+%endfunction
+
+%function getInputAddr_17_7_5_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getInput_17_7_5_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getDWorkAddr_17_7_5_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.o1q0zlydsc"
+%endfunction
+
+%function getDWork_17_7_5_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.o1q0zlydsc"
+%endfunction
+
+%function getInputAddr_17_6_5_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getInput_17_6_5_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getDWorkAddr_17_6_5_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.ouocoti3fg"
+%endfunction
+
+%function getDWork_17_6_5_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.ouocoti3fg"
+%endfunction
+
+%function getParamAddr_17_6_5_0_3_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_MaxMissedTicks"
+%endfunction
+
+%function getParam_17_6_5_0_3_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_MaxMissedTicks"
+%endfunction
+
+%function getParamAddr_17_6_5_0_3_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_YieldWhenWaiting"
+%endfunction
+
+%function getParam_17_6_5_0_3_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_YieldWhenWaiting"
+%endfunction
+
+%function getParamAddr_17_6_5_0_3_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_ChannelFields"
+%endfunction
+
+%function getParam_17_6_5_0_3_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_ChannelFields"
+%endfunction
+
+%function getParamAddr_17_6_5_0_3_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_OptParam"
+%endfunction
+
+%function getParam_17_6_5_0_3_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_OptParam"
+%endfunction
+
+%function getInputAddr_17_3_5_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.mxrolt0xbk" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_17_3_5_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.mxrolt0xbk" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_17_3_5_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.f5ddv0mfst"
+%endfunction
+
+%function getDWork_17_3_5_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.f5ddv0mfst"
+%endfunction
+
+%function getInputAddr_17_5_5_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getInput_17_5_5_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getDWorkAddr_17_5_5_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.lejzvzw2zo"
+%endfunction
+
+%function getDWork_17_5_5_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.lejzvzw2zo"
+%endfunction
+
+%function getInputAddr_17_6_5_3_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getInput_17_6_5_3_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getDWorkAddr_17_6_5_3_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.ouocoti3fg"
+%endfunction
+
+%function getDWork_17_6_5_3_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.ouocoti3fg"
+%endfunction
+
+%function getParamAddr_17_6_5_3_2_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_MaxMissedTicks"
+%endfunction
+
+%function getParam_17_6_5_3_2_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_MaxMissedTicks"
+%endfunction
+
+%function getParamAddr_17_6_5_3_2_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_YieldWhenWaiting"
+%endfunction
+
+%function getParam_17_6_5_3_2_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_YieldWhenWaiting"
+%endfunction
+
+%function getParamAddr_17_6_5_3_2_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_ChannelFields"
+%endfunction
+
+%function getParam_17_6_5_3_2_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_ChannelFields"
+%endfunction
+
+%function getParamAddr_17_6_5_3_2_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_OptParam"
+%endfunction
+
+%function getParam_17_6_5_3_2_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_OptParam"
+%endfunction
+
+%function getInputAddr_17_7_5_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getInput_17_7_5_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getDWorkAddr_17_7_5_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.o1q0zlydsc"
+%endfunction
+
+%function getDWork_17_7_5_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.o1q0zlydsc"
+%endfunction
+
+%function getInputAddr_17_3_5_4_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.mxrolt0xbk" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_17_3_5_4_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.mxrolt0xbk" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_17_3_5_4_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.f5ddv0mfst"
+%endfunction
+
+%function getDWork_17_3_5_4_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.f5ddv0mfst"
+%endfunction
+
+%function getInputAddr_17_6_5_4_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getInput_17_6_5_4_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getDWorkAddr_17_6_5_4_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.ouocoti3fg"
+%endfunction
+
+%function getDWork_17_6_5_4_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.ouocoti3fg"
+%endfunction
+
+%function getParamAddr_17_6_5_4_1_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_MaxMissedTicks"
+%endfunction
+
+%function getParam_17_6_5_4_1_1_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_MaxMissedTicks"
+%endfunction
+
+%function getParamAddr_17_6_5_4_1_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_YieldWhenWaiting"
+%endfunction
+
+%function getParam_17_6_5_4_1_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_YieldWhenWaiting"
+%endfunction
+
+%function getParamAddr_17_6_5_4_1_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_ChannelFields"
+%endfunction
+
+%function getParam_17_6_5_4_1_1_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_ChannelFields"
+%endfunction
+
+%function getParamAddr_17_6_5_4_1_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&dexojrsdjj.ThingSpeakOutput_OptParam"
+%endfunction
+
+%function getParam_17_6_5_4_1_1_10(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "dexojrsdjj.ThingSpeakOutput_OptParam"
+%endfunction
+
+%function getInputAddr_17_7_5_4_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getInput_17_7_5_4_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "ntrh2fpvwnc.e3fqikh2y3"
+%endfunction
+
+%function getDWorkAddr_17_7_5_4_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&cjyyyt0pe2y.o1q0zlydsc"
+%endfunction
+
+%function getDWork_17_7_5_4_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "cjyyyt0pe2y.o1q0zlydsc"
+%endfunction
+

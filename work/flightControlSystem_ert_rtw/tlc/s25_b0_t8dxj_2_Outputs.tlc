@@ -1,0 +1,101 @@
+%implements s25_b0_t8dxj_2_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+real32_T k1apypvrvx;
+%closefile localVarDecl
+%assign _modelSS = ""
+
+%<SLibGenerateExtModeOutput(system)>
+/* {S!d5}Outputs for Enabled SubSystem: '<S341>/MeasurementUpdate' incorporates:
+ *  EnablePort: '<S372>/Enable'
+ */
+if (edpjk15ywa) {
+    localDW->gbfirdjdlf = true;
+    /* {S!d8}Sum: '<S372>/Sum' incorporates:
+ *  Product: '<S372>/C[k]*xhat[k|k-1]'
+ *  Product: '<S372>/D[k]*u[k]'
+ *  Sum: '<S372>/Add1'
+ */
+    k1apypvrvx = ja1plydhvr - ((bndftywcc4[0] * drezeq3dm2[0] + bndftywcc4[1] * drezeq3dm2[1]) + fqrudwky4r * cdkzyhof0a);
+    /* {S!d10}Product: '<S372>/Product3' */
+    localB->fd4g40ws5p[0] = mqtvu0weep[0] * k1apypvrvx;
+    localB->fd4g40ws5p[1] = mqtvu0weep[1] * k1apypvrvx;
+    srUpdateBC(localDW->ot4wi4ovqd);
+} else if (localDW->gbfirdjdlf) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[7], "Disable",0)
+%if SLibCG_SystemFcnArgAccessed("obwebm2nuo",7,0)
+%<SLibCG_AccessArg(2 ,2, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("obwebm2nuo",7,1)
+%<SLibCG_AccessArg(2 ,2, 8)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("obwebm2nuo",7,2)
+%<SLibCG_AccessArg(2 ,2, 9)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("obwebm2nuo",7,3)
+%<SLibCG_AccessArg(2 ,2, 10)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("obwebm2nuo", ["%<::tSimStruct>", "localB", "localDW", "localP"], 7, 0, 14, 0, 6, 7)>\
+%assign ss = ::CompiledModel.System[7]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+%endif
+}
+/* {E!d5}End of Outputs for SubSystem: '<S341>/MeasurementUpdate' */
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[2].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Output", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))
+%<SLibCG_AccessArg(2, 2, 0)>
+%endif
+%if SLibCG_ArgAccessed(2, 2, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Output", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(2, 2, 0)>
+%endif
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ftjpp1i1nw(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(2, 2, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("ftjpp1i1nw", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>boolean_T edpjk15ywa\
+%assign comma = ", "
+%<comma>const real32_T mqtvu0weep[2]\
+%assign comma = ", "
+%<comma>real32_T ja1plydhvr\
+%assign comma = ", "
+%<comma>const real32_T bndftywcc4[2]\
+%assign comma = ", "
+%<comma>const real32_T drezeq3dm2[2]\
+%assign comma = ", "
+%<comma>real32_T fqrudwky4r\
+%assign comma = ", "
+%<comma>real32_T cdkzyhof0a\
+%assign comma = ", "
+%<comma>iti4gcqohw *localB\
+%assign comma = ", "
+%<comma>hhdlah0wwq *localDW\
+%assign comma = ", "
+%<comma>cdp2ulprtw *localP\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(2, 2, fcnProtoType)>
+%endfunction

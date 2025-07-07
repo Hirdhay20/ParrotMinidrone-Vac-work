@@ -1549,7 +1549,7 @@ DEF OnQuadNoRotation Viewpoint {
   orientation 0 -1 -0 1.57
 }
 DEF BlueMarker Transform {
-  translation 1 -0.02 0
+  translation 0 -0.02 3
   rotation 0 0 0 0
   children Shape {
     appearance Appearance {

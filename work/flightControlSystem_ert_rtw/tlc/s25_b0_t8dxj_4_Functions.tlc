@@ -1,0 +1,80 @@
+%implements s25_b0_t8dxj_4_Functions "C"
+
+%function rt_powf_snf_Fcn0(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real32_T tmp;
+real32_T tmp_p;
+real32_T y;
+if (rtIsNaNF(u0) || rtIsNaNF(u1)) {
+    y = %<LibGetMathConstant(LibRealNonFinite("nan"), FcnGetDataTypeIdFromName("single"))>;
+} else {
+    tmp = (real32_T)fabs(u0);
+    tmp_p = (real32_T)fabs(u1);
+    if (rtIsInfF(u1)) {
+        if (tmp == 1.0F) {
+            y = 1.0F;
+        } else if (tmp > 1.0F) {
+            if (u1 > 0.0F) {
+                y = %<LibGetMathConstant(LibRealNonFinite("inf"), FcnGetDataTypeIdFromName("single"))>;
+            } else {
+                y = 0.0F;
+            }
+        } else if (u1 > 0.0F) {
+            y = 0.0F;
+        } else {
+            y = %<LibGetMathConstant(LibRealNonFinite("inf"), FcnGetDataTypeIdFromName("single"))>;
+        }
+    } else if (tmp_p == 0.0F) {
+        y = 1.0F;
+    } else if (tmp_p == 1.0F) {
+        if (u1 > 0.0F) {
+            y = u0;
+        } else {
+            y = 1.0F / u0;
+        }
+    } else if (u1 == 2.0F) {
+        y = u0 * u0;
+    } else if ((u1 == 0.5F) && (u0 >= 0.0F)) {
+        y = (real32_T)sqrt(u0);
+    } else if ((u0 < 0.0F) && (u1 > (real32_T)floor(u1))) {
+        y = %<LibGetMathConstant(LibRealNonFinite("nan"), FcnGetDataTypeIdFromName("single"))>;
+    } else {
+        y = (real32_T)pow(u0, u1);
+    }
+}
+return y;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[4].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("rt_powf_snf", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "rt_powf_snf"))
+%<SLibCG_AccessArg(4, 0, 2)>
+%endif
+%if SLibCG_ArgAccessed(4, 0, 2)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "rt_powf_snf", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "rt_powf_snf"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(4, 0, 2)>
+%endif
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+extern real32_T rt_powf_snf(\
+%assign comma = ""
+%<comma>real32_T u0\
+%assign comma = ", "
+%<comma>real32_T u1\
+%assign comma = ", "
+%if SLibCG_ArgAccessed(4, 0, 2)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("rt_powf_snf", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(4, 0, fcnProtoType)>
+%return fcnBuff
+%endfunction
+

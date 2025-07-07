@@ -1,0 +1,8 @@
+%implements s25_b0_t8dxj_ModuleConstants "C"
+
+%function ModuleConstants(block) Output
+
+
+/* Named constants for MATLAB Function: '<S2>/MATLAB Function' */
+#define irvi1qlpr1 (-1)
+%endfunction

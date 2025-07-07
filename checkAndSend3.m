@@ -1,8 +1,8 @@
 function checkAndSend3(~, ~)
 
-channelID =  yourchannelID;
-readkey = 'YourReadAPIKey';
-writekey = 'YourWriteAPIKey';
+channelID =  2998088;
+readkey = 'I7E85FZDCUJB9706';
+writekey = 'M74MCCQM8D60AR5K';
 warningthing = MException('component:mnemonic', ...
             'msg');
 try
@@ -28,6 +28,7 @@ try
     
             thingSpeakWrite(channelID, 0, 'Fields', 1, 'WriteKey',writekey);
             disp('Email sent from ThingSpeak detection. Timer Stopped');
+            return;
         else
             disp('No active figure to capture screenshot');
         end
@@ -35,6 +36,7 @@ try
         delete(timerfindall);
     else
         disp('Red not detected on ThingSpeak...');
+        
     end
 catch ME
     disp('An error occured');

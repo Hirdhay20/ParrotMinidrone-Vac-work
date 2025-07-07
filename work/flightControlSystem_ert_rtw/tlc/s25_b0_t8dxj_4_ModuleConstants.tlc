@@ -1,0 +1,20 @@
+%implements s25_b0_t8dxj_4_ModuleConstants "C"
+
+%function ModuleConstants(block) Output
+
+
+/* Named constants for MATLAB Function: '<S10>/Position error transformation (Earth to Body frame)' */
+#define hlcx2t3xe3 (-1)
+
+/* Named constants for Chart: '<S5>/Chart' */
+#define ahthta0gkc (6U)
+#define ec5jvjrvxu (1U)
+#define hgbyq3450x (5U)
+#define irkhy2ipg5 (3U)
+#define izhsytknfl (3U)
+#define j1wqrgq4bo (4U)
+#define mmiimvt5ex (2U)
+#define muwntxc4g0 ((uint8_T)0U)
+#define mzsqqemciw (1U)
+#define pj1hxrp1f3 (2U)
+%endfunction

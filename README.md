@@ -74,7 +74,7 @@ This script has all the email preferences and sends the email with the attached 
   - Select "Model Settings" and click Model Properties.
   - Locate the Callbacks tab and enter the following code in the start function and apply.
     
-    ![Function](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20101237.png)
+    ![Function](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/Screenshot%202025-07-04%20101237.png)
 
 * External Code Requirements
   - Open the scripts with the names checkAndSend3 and sendRedAlert.

@@ -60,7 +60,7 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
   - ChannelID: The numeric ID of your ThingSpeak channel.
   - Write API Key: Found undr your channel's API Keys tab (must be a Write Key, not Read Key)
 * Set your sample time to 0.2 and the maximum missed ticks to 1000.
- ![ThingSpeak](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20105029.png)
+ ![ThingSpeak](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/Screenshot%202025-07-04%20105029.png)
 
 ### Email-Transmission
 #### Scripts in use 

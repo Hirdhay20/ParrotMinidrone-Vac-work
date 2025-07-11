@@ -1,0 +1,45 @@
+%implements s25_b0_le9wj_2_Disable "C"
+
+%function Disable(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* Disable for Product: '<S372>/Product3' incorporates:
+ *  Outport: '<S372>/L*(y[k]-yhat[k|k-1])'
+ */
+localB->fd4g40ws5p[0] = localP->Lykyhatkk1_Y0;
+localB->fd4g40ws5p[1] = localP->Lykyhatkk1_Y0;
+localDW->gbfirdjdlf = false;
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[2].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Disable", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Disable"))
+%<SLibCG_AccessArg(2, 3, 0)>
+%endif
+%if SLibCG_ArgAccessed(2, 3, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Disable", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Disable"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(2, 3, 0)>
+%endif
+%endfunction
+%function DisableFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void obwebm2nuo(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(2, 3, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("obwebm2nuo", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>iti4gcqohw *localB\
+%assign comma = ", "
+%<comma>hhdlah0wwq *localDW\
+%assign comma = ", "
+%<comma>cdp2ulprtw *localP\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(2, 3, fcnProtoType)>
+%endfunction

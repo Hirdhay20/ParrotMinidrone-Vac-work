@@ -1,0 +1,11 @@
+rtGetInf.o rtGetInf.o: \
+ C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rtGetInf.c \
+ C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rtwtypes.h \
+ C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rtGetInf.h \
+ C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rt_nonfinite.h
+
+C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rtwtypes.h:
+
+C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rtGetInf.h:
+
+C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rt_nonfinite.h:

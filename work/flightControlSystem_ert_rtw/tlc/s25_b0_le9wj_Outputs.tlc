@@ -1,0 +1,197 @@
+%implements s25_b0_le9wj_Outputs "C"
+
+%function OutputsForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign _modelSS = ""
+
+%<SLibGenerateExtModeOutput(system)>
+/* Reset subsysRan breadcrumbs */
+srClearBC(cjyyyt0pe2y.fxgka2mnesn.mkh12fremc3.ah5fb0fjvv);
+/* Reset subsysRan breadcrumbs */
+srClearBC(cjyyyt0pe2y.fxgka2mnesn.oersqf0c3p);
+/* Reset subsysRan breadcrumbs */
+srClearBC(cjyyyt0pe2y.fxgka2mnesn.ftvkipmcfj);
+/* Reset subsysRan breadcrumbs */
+srClearBC(cjyyyt0pe2y.fxgka2mnesn.ftjpp1i1nwt.ot4wi4ovqd);
+/* Reset subsysRan breadcrumbs */
+srClearBC(cjyyyt0pe2y.fxgka2mnesn.auyrlkczqpj.ey1udbrupy);
+/* Reset subsysRan breadcrumbs */
+srClearBC(cjyyyt0pe2y.fxgka2mnesn.m0i15tnngn);
+/* Reset subsysRan breadcrumbs */
+srClearBC(cjyyyt0pe2y.fxgka2mnesn.mwwbqhz3bs);
+/* Reset subsysRan breadcrumbs */
+srClearBC(cjyyyt0pe2y.fxgka2mnesn.l4nshphdfj);
+/* RateTransition: '<Root>/Rate Transition' */
+ntrh2fpvwnc.isdfgavbou = cjyyyt0pe2y.iiwhcel3vp[cjyyyt0pe2y.hvkcnsgbbz];
+%assign   Outputs_open_fxgka2mnesn_18_1 = ""
+%openfile Outputs_open_fxgka2mnesn_18_1
+
+/* Outputs for Atomic SubSystem: '<Root>/Control System' */
+%closefile Outputs_open_fxgka2mnesn_18_1
+
+%assign    Outputs_body_fxgka2mnesn_18_1 = ""
+%openfile  Outputs_body_fxgka2mnesn_18_1
+
+/* Inport: '<Root>/AC cmd' incorporates:
+ *  Inport: '<Root>/Sensors'
+ */
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[13], "Output",0)
+%if SLibCG_SystemFcnArgAccessed("fxgka2mnes",13,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("fxgka2mnes", ["%<_modelSS>", "&cmd_inport", "&sensor_inport", "ntrh2fpvwnc.isdfgavbou", "&ntrh2fpvwnc.fxgka2mnesn", "&cjyyyt0pe2y.fxgka2mnesn", "&dexojrsdjj.fxgka2mnesn", "&dfmncc1lrqw.fxgka2mnesn"], 13, 0, 6, 0, 6, 18)>\
+%assign ss = ::CompiledModel.System[13]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+%endif
+%closefile Outputs_body_fxgka2mnesn_18_1
+
+%assign    Outputs_close_fxgka2mnesn_18_1 = ""
+%openfile  Outputs_close_fxgka2mnesn_18_1
+
+/* End of Outputs for SubSystem: '<Root>/Control System' */
+%closefile Outputs_close_fxgka2mnesn_18_1
+%<SLibCG_DumpSSCode(Outputs_open_fxgka2mnesn_18_1, Outputs_body_fxgka2mnesn_18_1, Outputs_close_fxgka2mnesn_18_1)>
+
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput0LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int32_T i;
+int32_T jditpbqnwu;
+boolean_T exitg1;
+boolean_T redObjectDetected;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS17B3 = OpaqueTLCBlockFcn("Outputs", 17, 3, 5, 3, 0)
+%assign tlcOutputsFcnOfS17B5 = OpaqueTLCBlockFcn("Outputs", 17, 5, 5, 3, 1)
+%assign tlcOutputsFcnOfS17B6 = OpaqueTLCBlockFcn("Outputs", 17, 6, 5, 3, 2)
+%assign tlcOutputsFcnOfS17B7 = OpaqueTLCBlockFcn("Outputs", 17, 7, 5, 3, 3)
+/* {S!d4963}Outputs for Atomic SubSystem: '<Root>/Image Processing System' */
+/* {S!d4966}MATLABSystem: '<S2>/PARROT Image Conversion' incorporates:
+ *  Inport: '<Root>/Image Data'
+ */
+MW_Build_RGB(&imRGB[0], &ntrh2fpvwnc.n5sk4hd2o5[0], &ntrh2fpvwnc.c3kaynobqq[0], &ntrh2fpvwnc.frziy1sz4w[0]);
+/* {S!d4968}MATLAB Function: '<S2>/red_detection' incorporates:
+ *  MATLABSystem: '<S2>/PARROT Image Conversion'
+ */
+cjyyyt0pe2y.opneqbp5fe = irvi1qlpr1;
+for (i = 0; i < 19200; i++) {
+    ntrh2fpvwnc.x[i] = ((ntrh2fpvwnc.n5sk4hd2o5[i] >= 100) && (ntrh2fpvwnc.c3kaynobqq[i] <= 80) && (ntrh2fpvwnc.frziy1sz4w[i] <= 80));
+}
+redObjectDetected = false;
+i = 0;
+exitg1 = false;
+while ((!exitg1) && (i < 19200)) {
+    if (ntrh2fpvwnc.x[i]) {
+        redObjectDetected = true;
+        exitg1 = true;
+    } else {
+        i++;
+    }
+}
+if (redObjectDetected) {
+    jditpbqnwu = 1;
+    for (i = 0; i < 19200; i++) {
+        ntrh2fpvwnc.mc4z1rzycd[i] = ntrh2fpvwnc.n5sk4hd2o5[i];
+        ntrh2fpvwnc.mc4z1rzycd[i + 19200] = ntrh2fpvwnc.c3kaynobqq[i];
+        ntrh2fpvwnc.mc4z1rzycd[i + 38400] = ntrh2fpvwnc.frziy1sz4w[i];
+    }
+} else {
+    jditpbqnwu = 0;
+    memset(&ntrh2fpvwnc.mc4z1rzycd[0], 0, 57600U * sizeof(uint8_T));
+}
+/* {E!d4968}End of MATLAB Function: '<S2>/red_detection' */
+
+/* {S!d4970}MATLAB Function: '<S2>/MATLAB Function' */
+cjyyyt0pe2y.e5ig3ehgpg = irvi1qlpr1;
+for (i = 0; i < 57600; i++) {
+    if (jditpbqnwu != 0) {
+        cjyyyt0pe2y.eneomm50cl[i] = ntrh2fpvwnc.mc4z1rzycd[i];
+    }
+    ntrh2fpvwnc.mxrolt0xbk[i] = cjyyyt0pe2y.eneomm50cl[i];
+}
+/* {E!d4970}End of MATLAB Function: '<S2>/MATLAB Function' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS17B3)
+
+/* {S!d4972}ToWorkspace: '<S2>/To Workspace1' */
+%<tlcOutputsFcnOfS17B3>\
+%endif
+/* {S!d4978}Switch: '<S2>/Switch' */
+if (jditpbqnwu > dexojrsdjj.Switch_Threshold) {
+    /* {S!d4974}Switch: '<S2>/Switch' incorporates:
+ *  Constant: '<S2>/Constant'
+ */
+    ntrh2fpvwnc.e3fqikh2y3 = dexojrsdjj.Constant_Value;
+} else {
+    /* {S!d4976}Switch: '<S2>/Switch' incorporates:
+ *  Delay: '<S2>/Delay'
+ */
+    ntrh2fpvwnc.e3fqikh2y3 = cjyyyt0pe2y.nlttoemctt;
+}
+/* {E!d4978}End of Switch: '<S2>/Switch' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS17B5)
+
+/* {S!d4980}Scope: '<S2>/Scope' */
+%<tlcOutputsFcnOfS17B5>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS17B6)
+/* {S!d4982}S-Function (sldrtoo): '<S2>/ThingSpeak Output' */
+%<tlcOutputsFcnOfS17B6>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS17B7)
+/* {S!d4984}ToWorkspace: '<S2>/To Workspace' */
+%<tlcOutputsFcnOfS17B7>\
+%endif
+/* {S!d4986}Update for Delay: '<S2>/Delay' */
+cjyyyt0pe2y.nlttoemctt = ntrh2fpvwnc.e3fqikh2y3;
+/* {E!d4963}End of Outputs for SubSystem: '<Root>/Image Processing System' */
+
+/* {S!d4988}RateTransition: '<Root>/Rate Transition' */
+cjyyyt0pe2y.iiwhcel3vp[cjyyyt0pe2y.hvkcnsgbbz == 0] = ntrh2fpvwnc.e3fqikh2y3;
+cjyyyt0pe2y.hvkcnsgbbz = (int8_T)(cjyyyt0pe2y.hvkcnsgbbz == 0);
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput1LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function OutputsFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs0(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(5, 2, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs1(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(5, 3, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

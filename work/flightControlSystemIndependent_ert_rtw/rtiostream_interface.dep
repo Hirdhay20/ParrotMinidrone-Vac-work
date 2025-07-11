@@ -1,0 +1,23 @@
+rtiostream_interface.o rtiostream_interface.o: \
+ C:/PROGRA~1/MATLAB/R2024b/rtw/c/src/ext_mode/common/rtiostream_interface.c \
+ C:/PROGRA~1/MATLAB/R2024b/rtw/c/src/ext_mode/common/updown_util.h \
+ C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_extmode.h \
+ C:/PROGRA~1/MATLAB/R2024b/toolbox/coder/rtiostream/src/rtiostream.h \
+ C:/PROGRA~1/MATLAB/R2024b/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h \
+ C:/PROGRA~1/MATLAB/R2024b/rtw/c/src/ext_mode/common/ext_types.h \
+ C:/PROGRA~1/MATLAB/R2024b/rtw/c/src/ext_mode/common/ext_share.h
+
+C:/PROGRA~1/MATLAB/R2024b/rtw/c/src/ext_mode/common/updown_util.h:
+
+C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_extmode.h:
+
+C:/PROGRA~1/MATLAB/R2024b/toolbox/coder/rtiostream/src/rtiostream.h:
+
+C:/PROGRA~1/MATLAB/R2024b/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h:
+
+C:/PROGRA~1/MATLAB/R2024b/rtw/c/src/ext_mode/common/ext_types.h:
+
+C:/PROGRA~1/MATLAB/R2024b/rtw/c/src/ext_mode/common/ext_share.h:

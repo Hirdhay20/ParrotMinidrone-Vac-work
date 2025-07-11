@@ -1,0 +1,8 @@
+%implements s25_b0_le9wj_1_ModuleConstants "C"
+
+%function ModuleConstants(block) Output
+
+
+/* Named constants for MATLAB Function: '<S370>/SqrtUsedFcn' */
+#define med3lukgec (-1)
+%endfunction

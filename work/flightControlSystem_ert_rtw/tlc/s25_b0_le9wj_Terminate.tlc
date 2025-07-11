@@ -1,0 +1,85 @@
+%implements s25_b0_le9wj_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign _modelSS = ""
+
+%assign tlcTerminateFcnOfS17B3 = OpaqueTLCBlockFcn("Terminate", 17, 3, 5, 4, 0)
+%assign tlcTerminateFcnOfS17B6 = OpaqueTLCBlockFcn("Terminate", 17, 6, 5, 4, 1)
+%assign tlcTerminateFcnOfS17B7 = OpaqueTLCBlockFcn("Terminate", 17, 7, 5, 4, 2)
+%assign   Terminate_open_fxgka2mnesn_18_1 = ""
+%openfile Terminate_open_fxgka2mnesn_18_1
+
+/* Terminate for Atomic SubSystem: '<Root>/Control System' */
+%closefile Terminate_open_fxgka2mnesn_18_1
+
+%assign    Terminate_body_fxgka2mnesn_18_1 = ""
+%openfile  Terminate_body_fxgka2mnesn_18_1
+
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[13], "Terminate",0)
+%if SLibCG_SystemFcnArgAccessed("foikf2i04l",13,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("foikf2i04l", ["%<_modelSS>", "&ntrh2fpvwnc.fxgka2mnesn", "&cjyyyt0pe2y.fxgka2mnesn"], 13, 0, 18, 0, 18, 18)>\
+%assign ss = ::CompiledModel.System[13]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+%endif
+%closefile Terminate_body_fxgka2mnesn_18_1
+
+%assign    Terminate_close_fxgka2mnesn_18_1 = ""
+%openfile  Terminate_close_fxgka2mnesn_18_1
+
+/* End of Terminate for SubSystem: '<Root>/Control System' */
+%closefile Terminate_close_fxgka2mnesn_18_1
+%<SLibCG_DumpSSCode(Terminate_open_fxgka2mnesn_18_1, Terminate_body_fxgka2mnesn_18_1, Terminate_close_fxgka2mnesn_18_1)>
+
+
+%assign   Terminate_open_ergv5zgf3f_18_4 = ""
+%openfile Terminate_open_ergv5zgf3f_18_4
+
+/* Terminate for Atomic SubSystem: '<Root>/Image Processing System' */
+%closefile Terminate_open_ergv5zgf3f_18_4
+
+%assign    Terminate_body_ergv5zgf3f_18_4 = ""
+%openfile  Terminate_body_ergv5zgf3f_18_4
+
+%if !WHITE_SPACE(tlcTerminateFcnOfS17B3)
+/* Terminate for ToWorkspace: '<S2>/To Workspace1' */
+%<tlcTerminateFcnOfS17B3>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS17B6)
+/* Terminate for S-Function (sldrtoo): '<S2>/ThingSpeak Output' */
+%<tlcTerminateFcnOfS17B6>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS17B7)
+/* Terminate for ToWorkspace: '<S2>/To Workspace' */
+%<tlcTerminateFcnOfS17B7>\
+%endif
+%closefile Terminate_body_ergv5zgf3f_18_4
+
+%assign    Terminate_close_ergv5zgf3f_18_4 = ""
+%openfile  Terminate_close_ergv5zgf3f_18_4
+
+/* End of Terminate for SubSystem: '<Root>/Image Processing System' */
+%closefile Terminate_close_ergv5zgf3f_18_4
+%<SLibCG_DumpSSCode(Terminate_open_ergv5zgf3f_18_4, Terminate_body_ergv5zgf3f_18_4, Terminate_close_ergv5zgf3f_18_4)>
+
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(5, 4, fcnProtoType)>
+%endfunction

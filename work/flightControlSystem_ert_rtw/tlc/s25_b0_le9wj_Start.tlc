@@ -1,0 +1,129 @@
+%implements s25_b0_le9wj_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign _modelSS = ""
+
+%assign tlcSetupRuntimeResourcesFcnOfS17B3 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 3, 5, 0, 0)
+%assign tlcSetupRuntimeResourcesFcnOfS17B5 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 5, 5, 0, 1)
+%assign tlcSetupRuntimeResourcesFcnOfS17B7 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 7, 5, 0, 2)
+%assign tlcStartFcnOfS17B6 = OpaqueTLCBlockFcn("Start", 17, 6, 5, 0, 3)
+%assign   SetupRuntimeResources_open_fxgka2mnesn_18_1 = ""
+%openfile SetupRuntimeResources_open_fxgka2mnesn_18_1
+
+/* SetupRuntimeResources for Atomic SubSystem: '<Root>/Control System' */
+%closefile SetupRuntimeResources_open_fxgka2mnesn_18_1
+
+%assign    SetupRuntimeResources_body_fxgka2mnesn_18_1 = ""
+%openfile  SetupRuntimeResources_body_fxgka2mnesn_18_1
+
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[13], "SetupRuntimeResources",0)
+%if SLibCG_SystemFcnArgAccessed("kelbv3f0o2",13,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("kelbv3f0o2", ["%<_modelSS>", "&ntrh2fpvwnc.fxgka2mnesn", "&cjyyyt0pe2y.fxgka2mnesn"], 13, 0, 2, 0, 0, 18)>\
+%assign ss = ::CompiledModel.System[13]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+%endif
+%closefile SetupRuntimeResources_body_fxgka2mnesn_18_1
+
+%assign    SetupRuntimeResources_close_fxgka2mnesn_18_1 = ""
+%openfile  SetupRuntimeResources_close_fxgka2mnesn_18_1
+
+/* End of SetupRuntimeResources for SubSystem: '<Root>/Control System' */
+%closefile SetupRuntimeResources_close_fxgka2mnesn_18_1
+%<SLibCG_DumpSSCode(SetupRuntimeResources_open_fxgka2mnesn_18_1, SetupRuntimeResources_body_fxgka2mnesn_18_1, SetupRuntimeResources_close_fxgka2mnesn_18_1)>
+
+
+%assign   SetupRuntimeResources_open_ergv5zgf3f_18_4 = ""
+%openfile SetupRuntimeResources_open_ergv5zgf3f_18_4
+
+/* SetupRuntimeResources for Atomic SubSystem: '<Root>/Image Processing System' */
+%closefile SetupRuntimeResources_open_ergv5zgf3f_18_4
+
+%assign    SetupRuntimeResources_body_ergv5zgf3f_18_4 = ""
+%openfile  SetupRuntimeResources_body_ergv5zgf3f_18_4
+
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS17B3)
+/* SetupRuntimeResources for ToWorkspace: '<S2>/To Workspace1' */
+%<tlcSetupRuntimeResourcesFcnOfS17B3>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS17B5)
+/* SetupRuntimeResources for Scope: '<S2>/Scope' */
+%<tlcSetupRuntimeResourcesFcnOfS17B5>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS17B7)
+/* SetupRuntimeResources for ToWorkspace: '<S2>/To Workspace' */
+%<tlcSetupRuntimeResourcesFcnOfS17B7>\
+%endif
+%closefile SetupRuntimeResources_body_ergv5zgf3f_18_4
+
+%assign    SetupRuntimeResources_close_ergv5zgf3f_18_4 = ""
+%openfile  SetupRuntimeResources_close_ergv5zgf3f_18_4
+
+/* End of SetupRuntimeResources for SubSystem: '<Root>/Image Processing System' */
+%closefile SetupRuntimeResources_close_ergv5zgf3f_18_4
+%<SLibCG_DumpSSCode(SetupRuntimeResources_open_ergv5zgf3f_18_4, SetupRuntimeResources_body_ergv5zgf3f_18_4, SetupRuntimeResources_close_ergv5zgf3f_18_4)>
+
+
+%assign   Start_open_fxgka2mnesn_18_1 = ""
+%openfile Start_open_fxgka2mnesn_18_1
+
+/* Start for Atomic SubSystem: '<Root>/Control System' */
+%closefile Start_open_fxgka2mnesn_18_1
+
+%assign    Start_body_fxgka2mnesn_18_1 = ""
+%openfile  Start_body_fxgka2mnesn_18_1
+
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[13], "Start",0)
+%if SLibCG_SystemFcnArgAccessed("dwrvz3trvf",13,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("dwrvz3trvf", ["%<_modelSS>", "&cjyyyt0pe2y.fxgka2mnesn"], 13, 0, 0, 0, 0, 18)>\
+%assign ss = ::CompiledModel.System[13]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+%endif
+%closefile Start_body_fxgka2mnesn_18_1
+
+%assign    Start_close_fxgka2mnesn_18_1 = ""
+%openfile  Start_close_fxgka2mnesn_18_1
+
+/* End of Start for SubSystem: '<Root>/Control System' */
+%closefile Start_close_fxgka2mnesn_18_1
+%<SLibCG_DumpSSCode(Start_open_fxgka2mnesn_18_1, Start_body_fxgka2mnesn_18_1, Start_close_fxgka2mnesn_18_1)>
+
+
+/* Start for Atomic SubSystem: '<Root>/Image Processing System' */
+/* Start for MATLABSystem: '<S2>/PARROT Image Conversion' */
+cjyyyt0pe2y.ojzwywsqra = true;
+cjyyyt0pe2y.adkargetc2.isInitialized = 1;
+%if !WHITE_SPACE(tlcStartFcnOfS17B6)
+/* Start for S-Function (sldrtoo): '<S2>/ThingSpeak Output' */
+%<tlcStartFcnOfS17B6>\
+/* End of Start for SubSystem: '<Root>/Image Processing System' */
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(5, 0, fcnProtoType)>
+%endfunction

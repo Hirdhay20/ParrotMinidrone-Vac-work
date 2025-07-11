@@ -1,0 +1,396 @@
+%implements s25_b0_le9wj_4_SystemInitialize "C"
+
+%function SystemInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int32_T i;
+%closefile localVarDecl
+%assign _modelSS = ""
+
+/* {S!d4240}InitializeConditions for DiscreteIntegrator: '<S437>/SimplyIntegrateVelocity' */
+localDW->jkzxf325k4[0] = localP->SimplyIntegrateVelocity_IC;
+localDW->jkzxf325k4[1] = localP->SimplyIntegrateVelocity_IC;
+localDW->nvlnzfl5aj = 2;
+/* {S!d4242}InitializeConditions for Reshape: '<S255>/Reshapexhat' incorporates:
+ *  Delay: '<S251>/Delay2'
+ */
+localDW->hf525y4flm = localP->Delay2_InitialCondition;
+/* {S!d4244}InitializeConditions for Delay: '<S255>/MemoryX' */
+localDW->p21jfteabq = true;
+/* {S!d4246}InitializeConditions for DiscreteFilter: '<S256>/pressureFilter_IIR' */
+localDW->bdtll520oe[0] = localP->pressureFilter_IIR_InitialStates;
+/* {S!d4248}InitializeConditions for DiscreteFilter: '<S256>/sonarFilter_IIR' */
+localDW->n4c02ccmvw[0] = localP->sonarFilter_IIR_InitialStates;
+/* {S!d4250}InitializeConditions for DiscreteFilter: '<S256>/pressureFilter_IIR' */
+localDW->bdtll520oe[1] = localP->pressureFilter_IIR_InitialStates;
+/* {S!d4252}InitializeConditions for DiscreteFilter: '<S256>/sonarFilter_IIR' */
+localDW->n4c02ccmvw[1] = localP->sonarFilter_IIR_InitialStates;
+/* {S!d4254}InitializeConditions for DiscreteFilter: '<S256>/pressureFilter_IIR' */
+localDW->bdtll520oe[2] = localP->pressureFilter_IIR_InitialStates;
+/* {S!d4256}InitializeConditions for DiscreteFilter: '<S256>/sonarFilter_IIR' */
+localDW->n4c02ccmvw[2] = localP->sonarFilter_IIR_InitialStates;
+/* {S!d4258}InitializeConditions for DiscreteIntegrator: '<S319>/Discrete-Time Integrator' */
+localDW->pwshjzhr55 = localP->DiscreteTimeIntegrator_IC;
+/* {S!d4260}InitializeConditions for Delay: '<S321>/MemoryX' */
+localDW->jjttlxirju = true;
+/* {S!d4262}InitializeConditions for DiscreteFir: '<S253>/FIR_IMUaccel' */
+localDW->iyk1p23sk3 = 0;
+for (i = 0; i < 15; i++) {
+    localDW->g3y2exu1od[i] = localP->FIR_IMUaccel_InitialStates;
+}
+/* {E!d4262}End of InitializeConditions for DiscreteFir: '<S253>/FIR_IMUaccel' */
+
+/* {S!d4264}InitializeConditions for Delay: '<S375>/MemoryX' */
+localDW->bofwvja4x2 = true;
+/* {S!d4266}InitializeConditions for DiscreteTransferFcn: '<S253>/LPF Fcutoff = 40Hz1' */
+localDW->bxz11ul2qv = localP->LPFFcutoff40Hz1_InitialStates;
+/* {S!d4268}InitializeConditions for DiscreteTransferFcn: '<S253>/LPF Fcutoff = 40Hz' */
+localDW->ah0gcg1hha = localP->LPFFcutoff40Hz_InitialStates;
+/* {S!d4270}InitializeConditions for DiscreteFilter: '<S253>/IIR_IMUgyro_r' */
+for (i = 0; i < 5; i++) {
+    localDW->brphiodnrc[i] = localP->IIR_IMUgyro_r_InitialStates;
+}
+/* {E!d4270}End of InitializeConditions for DiscreteFilter: '<S253>/IIR_IMUgyro_r' */
+
+/* {S!d4272}InitializeConditions for Sum: '<S434>/FixPt Sum1' incorporates:
+ *  UnitDelay: '<S432>/Output'
+ */
+localDW->e34yfyxvng = localP->Output_InitialCondition;
+/* {S!d4274}InitializeConditions for Delay: '<S441>/MemoryX' */
+localDW->kz35mo0sw4 = true;
+/* {S!d4276}InitializeConditions for Sum: '<S515>/FixPt Sum1' incorporates:
+ *  UnitDelay: '<S514>/Output'
+ */
+localDW->dqzlvsxig5 = localP->Output_InitialCondition_f4j4r4eocj;
+/* {S!d4278}InitializeConditions for DiscreteFilter: '<S440>/IIRgyroz' */
+for (i = 0; i < 10; i++) {
+    localDW->dd2ozag2ww[i] = localP->IIRgyroz_InitialStates;
+}
+/* {E!d4278}End of InitializeConditions for DiscreteFilter: '<S440>/IIRgyroz' */
+
+/* {S!d4280}InitializeConditions for Sum: '<S15>/FixPt Sum1' incorporates:
+ *  UnitDelay: '<S14>/Output'
+ */
+localDW->lsa3afmpix = localP->Output_InitialCondition_firhb3e3wz;
+/* {S!d4282}InitializeConditions for DiscreteIntegrator: '<S7>/Discrete-Time Integrator' */
+localDW->be2vxxi4ie = localP->DiscreteTimeIntegrator_IC_h2elqlsrlg;
+localDW->gqvj2g0c4y = 2;
+/* {S!d4284}InitializeConditions for DiscreteIntegrator: '<S11>/Discrete-Time Integrator' */
+localDW->m4so224kut = localP->DiscreteTimeIntegrator_IC_b0y4qv5dqa;
+/* {S!d4286}InitializeConditions for Sum: '<S248>/FixPt Sum1' incorporates:
+ *  UnitDelay: '<S242>/Output'
+ */
+localDW->aj2vlvhpfu = localP->Output_InitialCondition_hxy4e0ic3f;
+/* {S!d4288}InitializeConditions for Sum: '<S4>/Add' incorporates:
+ *  Delay: '<S4>/Delay One Step'
+ */
+localDW->myqcaypgmg = localP->DelayOneStep_InitialCondition;
+/* {S!d4290}SystemInitialize for MATLAB Function: '<S10>/Position error transformation (Earth to Body frame)' */
+localDW->dzrxs45i35 = false;
+localDW->pdskjtqzyt = hlcx2t3xe3;
+/* {S!d4292}SystemInitialize for Merge: '<S4>/Merge' */
+flag_outport = localP->Merge_InitialOutput;
+/* {S!d4294}SystemInitialize for Chart: '<S5>/Chart' */
+localDW->j4iyo5vepb = 0U;
+localDW->mp20odmodt = 0U;
+localDW->e33fo1esj3 = hlcx2t3xe3;
+localB->c3oe3uqnbj = 0.0;
+localB->m0gh3aijex = 0.0;
+localB->auxg5zmrd0 = 0.0;
+localDW->l2qyjqxoou = 0.0;
+localDW->ij5vwyighj = 0U;
+localDW->m11vfqyek5 = muwntxc4g0;
+localDW->ioei4z3fu5 = muwntxc4g0;
+/* {S!d4296}SystemInitialize for MATLAB Function: '<S305>/SqrtUsedFcn' */
+localDW->ap4bucr2lb = false;
+localDW->elif4ekqqd = hlcx2t3xe3;
+/* {S!d4298}InitializeConditions for UnitDelay: '<S448>/UD' incorporates:
+ *  Sum: '<S448>/Diff'
+ */
+localDW->bwea4hxqvk[0] = localP->DiscreteDerivative_ICPrevScaledInput;
+/* {S!d4300}InitializeConditions for Delay: '<S436>/Delay' */
+localDW->bs11adx5jj[0] = localP->Delay_InitialCondition;
+/* {S!d4302}InitializeConditions for Delay: '<S6>/Delay1' */
+localDW->joy12tk1bf[0] = localP->Delay1_InitialCondition;
+/* {S!d4304}InitializeConditions for DiscreteIntegrator: '<S216>/Integrator' */
+localDW->mjn5ntnu3u[0] = localP->Velocitycontroller_InitialConditionForIntegrator;
+/* {S!d4306}InitializeConditions for DiscreteTransferFcn: '<S10>/LPF 8Hz Cutoff Filter to avoid oscillations  induced by position controller' */
+localDW->dgkpnfrv5d[0] = localP->LPF8HzCutoffFiltertoavoidoscillationsinducedbypositi_ltwriv0oun;
+/* {S!d4308}InitializeConditions for DiscreteIntegrator: '<S107>/Integrator' */
+localDW->mwpgqzgixr[0] = localP->Angularvelocitycontrolloop_InitialConditionForIntegrator;
+/* {S!d4310}InitializeConditions for DiscreteIntegrator: '<S102>/Filter' */
+localDW->i2bolv3wez[0] = localP->Angularvelocitycontrolloop_InitialConditionForFilter;
+/* {S!d4205}SystemInitialize for Enabled SubSystem: '<S277>/MeasurementUpdate' */
+/* {S!d4312}SystemInitialize for Product: '<S307>/Product3' incorporates:
+ *  Outport: '<S307>/L*(y[k]-yhat[k|k-1])'
+ */
+localB->jcydcfokrq[0] = localP->Lykyhatkk1_Y0;
+/* {E!d4205}End of SystemInitialize for SubSystem: '<S277>/MeasurementUpdate' */
+
+/* {S!d4207}SystemInitialize for Enabled SubSystem: '<S283>/Enabled Subsystem' */
+/* {S!d4314}SystemInitialize for Product: '<S309>/Product2' incorporates:
+ *  Outport: '<S309>/deltax'
+ */
+localB->mplsyaumfh[0] = localP->deltax_Y0;
+/* {E!d4207}End of SystemInitialize for SubSystem: '<S283>/Enabled Subsystem' */
+
+/* {S!d4316}InitializeConditions for UnitDelay: '<S448>/UD' incorporates:
+ *  Sum: '<S448>/Diff'
+ */
+localDW->bwea4hxqvk[1] = localP->DiscreteDerivative_ICPrevScaledInput;
+/* {S!d4318}InitializeConditions for Delay: '<S436>/Delay' */
+localDW->bs11adx5jj[1] = localP->Delay_InitialCondition;
+/* {S!d4320}InitializeConditions for Delay: '<S6>/Delay1' */
+localDW->joy12tk1bf[1] = localP->Delay1_InitialCondition;
+/* {S!d4322}InitializeConditions for DiscreteIntegrator: '<S216>/Integrator' */
+localDW->mjn5ntnu3u[1] = localP->Velocitycontroller_InitialConditionForIntegrator;
+/* {S!d4324}InitializeConditions for DiscreteTransferFcn: '<S10>/LPF 8Hz Cutoff Filter to avoid oscillations  induced by position controller' */
+localDW->dgkpnfrv5d[1] = localP->LPF8HzCutoffFiltertoavoidoscillationsinducedbypositi_ltwriv0oun;
+/* {S!d4326}InitializeConditions for DiscreteIntegrator: '<S107>/Integrator' */
+localDW->mwpgqzgixr[1] = localP->Angularvelocitycontrolloop_InitialConditionForIntegrator;
+/* {S!d4328}InitializeConditions for DiscreteIntegrator: '<S102>/Filter' */
+localDW->i2bolv3wez[1] = localP->Angularvelocitycontrolloop_InitialConditionForFilter;
+/* {S!d4209}SystemInitialize for Enabled SubSystem: '<S277>/MeasurementUpdate' */
+/* {S!d4330}SystemInitialize for Product: '<S307>/Product3' incorporates:
+ *  Outport: '<S307>/L*(y[k]-yhat[k|k-1])'
+ */
+localB->jcydcfokrq[1] = localP->Lykyhatkk1_Y0;
+/* {E!d4209}End of SystemInitialize for SubSystem: '<S277>/MeasurementUpdate' */
+
+/* {S!d4211}SystemInitialize for Enabled SubSystem: '<S283>/Enabled Subsystem' */
+/* {S!d4332}SystemInitialize for Product: '<S309>/Product2' incorporates:
+ *  Outport: '<S309>/deltax'
+ */
+localB->mplsyaumfh[1] = localP->deltax_Y0;
+/* {E!d4211}End of SystemInitialize for SubSystem: '<S283>/Enabled Subsystem' */
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[6], "SystemInitialize",0)
+
+/* {S!d4334}SystemInitialize for MATLAB Function: '<S370>/SqrtUsedFcn' */
+%if SLibCG_SystemFcnArgAccessed("b30wgb1rj4",6,0)
+%<SLibCG_AccessArg(4 ,3, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("b30wgb1rj4",6,1)
+%<SLibCG_AccessArg(4 ,3, 2)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("b30wgb1rj4", ["%<::tSimStruct>", "&localDW->dj1nernjkn"], 6, 0, 4, 0, 4, 13)>\
+%assign ss = ::CompiledModel.System[6]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+%endif
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[7], "SystemInitialize",0)
+
+/* {S!d4213}SystemInitialize for Enabled SubSystem: '<S341>/MeasurementUpdate' */
+%if SLibCG_SystemFcnArgAccessed("e0p33blxes",7,0)
+%<SLibCG_AccessArg(4 ,3, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("e0p33blxes",7,1)
+%<SLibCG_AccessArg(4 ,3, 1)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("e0p33blxes",7,2)
+%<SLibCG_AccessArg(4 ,3, 3)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("e0p33blxes", ["%<::tSimStruct>", "&localB->ftjpp1i1nwt", "&localP->ftjpp1i1nwt"], 7, 0, 4, 0, 4, 13)>\
+%assign ss = ::CompiledModel.System[7]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+/* {E!d4213}End of SystemInitialize for SubSystem: '<S341>/MeasurementUpdate' */
+%endif
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[8], "SystemInitialize",0)
+
+/* {S!d4215}SystemInitialize for Enabled SubSystem: '<S348>/Enabled Subsystem' */
+%if SLibCG_SystemFcnArgAccessed("d45it3gc3c",8,0)
+%<SLibCG_AccessArg(4 ,3, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("d45it3gc3c",8,1)
+%<SLibCG_AccessArg(4 ,3, 1)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("d45it3gc3c",8,2)
+%<SLibCG_AccessArg(4 ,3, 3)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("d45it3gc3c", ["%<::tSimStruct>", "&localB->auyrlkczqpj", "&localP->auyrlkczqpj"], 8, 0, 4, 0, 4, 13)>\
+%assign ss = ::CompiledModel.System[8]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+/* {E!d4215}End of SystemInitialize for SubSystem: '<S348>/Enabled Subsystem' */
+%endif
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[6], "SystemInitialize",0)
+
+/* {S!d4336}SystemInitialize for MATLAB Function: '<S424>/SqrtUsedFcn' */
+%if SLibCG_SystemFcnArgAccessed("b30wgb1rj4",6,0)
+%<SLibCG_AccessArg(4 ,3, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("b30wgb1rj4",6,1)
+%<SLibCG_AccessArg(4 ,3, 2)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("b30wgb1rj4", ["%<::tSimStruct>", "&localDW->kmosw432ya"], 6, 1, 4, 0, 4, 13)>\
+%assign ss = ::CompiledModel.System[6]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+%endif
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[7], "SystemInitialize",0)
+
+/* {S!d4217}SystemInitialize for Enabled SubSystem: '<S395>/MeasurementUpdate' */
+%if SLibCG_SystemFcnArgAccessed("e0p33blxes",7,0)
+%<SLibCG_AccessArg(4 ,3, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("e0p33blxes",7,1)
+%<SLibCG_AccessArg(4 ,3, 1)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("e0p33blxes",7,2)
+%<SLibCG_AccessArg(4 ,3, 3)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("e0p33blxes", ["%<::tSimStruct>", "&localB->ieoyjrjufk", "&localP->ieoyjrjufk"], 7, 1, 4, 0, 4, 13)>\
+%assign ss = ::CompiledModel.System[7]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+/* {E!d4217}End of SystemInitialize for SubSystem: '<S395>/MeasurementUpdate' */
+%endif
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[8], "SystemInitialize",0)
+
+/* {S!d4219}SystemInitialize for Enabled SubSystem: '<S402>/Enabled Subsystem' */
+%if SLibCG_SystemFcnArgAccessed("d45it3gc3c",8,0)
+%<SLibCG_AccessArg(4 ,3, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("d45it3gc3c",8,1)
+%<SLibCG_AccessArg(4 ,3, 1)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("d45it3gc3c",8,2)
+%<SLibCG_AccessArg(4 ,3, 3)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("d45it3gc3c", ["%<::tSimStruct>", "&localB->boxx2sxddf", "&localP->boxx2sxddf"], 8, 1, 4, 0, 4, 13)>\
+%assign ss = ::CompiledModel.System[8]
+%if !LibSystemIsInlined(ss)
+;
+%else
+\
+%endif
+
+/* {E!d4219}End of SystemInitialize for SubSystem: '<S402>/Enabled Subsystem' */
+
+%endif
+/* {S!d4221}SystemInitialize for Triggered SubSystem: '<S429>/Triggered Subsystem' */
+/* {S!d4338}SystemInitialize for SignalConversion generated from: '<S433>/In1' incorporates:
+ *  Outport: '<S433>/Out1'
+ */
+localB->adx2fuzq4r = localP->Out1_Y0;
+/* {E!d4221}End of SystemInitialize for SubSystem: '<S429>/Triggered Subsystem' */
+
+/* {S!d4340}SystemInitialize for MATLAB Function: '<S508>/SqrtUsedFcn' */
+localDW->c0to4osp5u = false;
+localDW->jmuxg2qobp = hlcx2t3xe3;
+/* {S!d4223}SystemInitialize for Enabled SubSystem: '<S479>/MeasurementUpdate' */
+/* {S!d4342}SystemInitialize for Product: '<S510>/Product3' incorporates:
+ *  Outport: '<S510>/L*(y[k]-yhat[k|k-1])'
+ */
+localB->ipfvwleu0r[0] = localP->Lykyhatkk1_Y0_cokidwstay;
+/* {E!d4223}End of SystemInitialize for SubSystem: '<S479>/MeasurementUpdate' */
+
+/* {S!d4225}SystemInitialize for Enabled SubSystem: '<S486>/Enabled Subsystem' */
+/* {S!d4344}SystemInitialize for Product: '<S512>/Product2' incorporates:
+ *  Outport: '<S512>/deltax'
+ */
+localB->cxjyl01bud[0] = localP->deltax_Y0_k5wvmx5y5h;
+/* {E!d4225}End of SystemInitialize for SubSystem: '<S486>/Enabled Subsystem' */
+
+/* {S!d4227}SystemInitialize for Enabled SubSystem: '<S479>/MeasurementUpdate' */
+/* {S!d4346}SystemInitialize for Product: '<S510>/Product3' incorporates:
+ *  Outport: '<S510>/L*(y[k]-yhat[k|k-1])'
+ */
+localB->ipfvwleu0r[1] = localP->Lykyhatkk1_Y0_cokidwstay;
+/* {E!d4227}End of SystemInitialize for SubSystem: '<S479>/MeasurementUpdate' */
+
+/* {S!d4229}SystemInitialize for Enabled SubSystem: '<S486>/Enabled Subsystem' */
+/* {S!d4348}SystemInitialize for Product: '<S512>/Product2' incorporates:
+ *  Outport: '<S512>/deltax'
+ */
+localB->cxjyl01bud[1] = localP->deltax_Y0_k5wvmx5y5h;
+/* {E!d4229}End of SystemInitialize for SubSystem: '<S486>/Enabled Subsystem' */
+
+/* {S!d4231}SystemInitialize for Enabled SubSystem: '<S479>/MeasurementUpdate' */
+/* {S!d4350}SystemInitialize for Product: '<S510>/Product3' incorporates:
+ *  Outport: '<S510>/L*(y[k]-yhat[k|k-1])'
+ */
+localB->ipfvwleu0r[2] = localP->Lykyhatkk1_Y0_cokidwstay;
+/* {E!d4231}End of SystemInitialize for SubSystem: '<S479>/MeasurementUpdate' */
+
+/* {S!d4233}SystemInitialize for Enabled SubSystem: '<S486>/Enabled Subsystem' */
+/* {S!d4352}SystemInitialize for Product: '<S512>/Product2' incorporates:
+ *  Outport: '<S512>/deltax'
+ */
+localB->cxjyl01bud[2] = localP->deltax_Y0_k5wvmx5y5h;
+/* {E!d4233}End of SystemInitialize for SubSystem: '<S486>/Enabled Subsystem' */
+
+/* {S!d4235}SystemInitialize for Enabled SubSystem: '<S479>/MeasurementUpdate' */
+/* {S!d4354}SystemInitialize for Product: '<S510>/Product3' incorporates:
+ *  Outport: '<S510>/L*(y[k]-yhat[k|k-1])'
+ */
+localB->ipfvwleu0r[3] = localP->Lykyhatkk1_Y0_cokidwstay;
+/* {E!d4235}End of SystemInitialize for SubSystem: '<S479>/MeasurementUpdate' */
+
+/* {S!d4237}SystemInitialize for Enabled SubSystem: '<S486>/Enabled Subsystem' */
+/* {S!d4356}SystemInitialize for Product: '<S512>/Product2' incorporates:
+ *  Outport: '<S512>/deltax'
+ */
+localB->cxjyl01bud[3] = localP->deltax_Y0_k5wvmx5y5h;
+/* {E!d4237}End of SystemInitialize for SubSystem: '<S486>/Enabled Subsystem' */
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[4].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("SystemInitialize", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "SystemInitialize"))
+%<SLibCG_AccessArg(4, 3, 0)>
+%endif
+%if SLibCG_ArgAccessed(4, 3, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "SystemInitialize", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "SystemInitialize"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(4, 3, 0)>
+%endif
+%<LibSetSystemField(system, "CachedSystemInitializeLocalVars", localVarDecl)>
+%endfunction
+%function SystemInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void pm32whusy4(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(4, 3, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("pm32whusy4", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>hs5rkaddlu *localB\
+%assign comma = ", "
+%<comma>b4hzi5kh0b *localDW\
+%assign comma = ", "
+%<comma>fmp1yi05qu *localP\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(4, 3, fcnProtoType)>
+%endfunction

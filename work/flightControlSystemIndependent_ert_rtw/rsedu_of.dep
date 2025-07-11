@@ -1,0 +1,14 @@
+rsedu_of.o rsedu_of.o: \
+ C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/parrot/src/rsedu_of.c \
+ C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/parrot/include/rsedu_of.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/parrot/include/rsedu_globalparams.h \
+ C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/MW_target_hardware_resources.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/parrot/include/ptimer.h
+
+C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/parrot/include/rsedu_of.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/parrot/include/rsedu_globalparams.h:
+
+C:/Users/Hirdhay.Ramnarain/MATLAB/Projects/examples/parrotMinidroneCompetition/work/flightControlSystemIndependent_ert_rtw/MW_target_hardware_resources.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/parrot/include/ptimer.h:

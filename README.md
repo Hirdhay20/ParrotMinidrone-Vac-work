@@ -44,7 +44,7 @@ Launch the Parrot Mambo Mini-drone competition Simulink package utilising the fi
 * Enter a desired Hex colour that's not red and then select "Update Virtual World"
 * Once all the above is done it should show in the  Virtual World.
 * In the command window type TFinal = 200; to change the simulation run time. 
- ![Virtual World](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/images/Screenshot%202025-07-04%20102615.png)
+ ![Virtual World](https://github.com/Hirdhay20/ParrotMinidrone-Vac-work/blob/main/Screenshot%202025-07-04%20102615.png)
 ### Virtual-World-Editor
 * On the Virtual World pane select the icon to the left of the camera icon.
 * Select edit once the editor window opens and edit the translation coordinates of the cage so it doesn't intefere with the simulation.

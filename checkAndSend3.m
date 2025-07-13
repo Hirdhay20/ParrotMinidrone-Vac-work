@@ -1,7 +1,7 @@
 function checkAndSend3(~, ~)
-channelID =  2998088;
-readkey = 'I7E85FZDCUJB9706';
-writekey = 'M74MCCQM8D60AR5K';
+channelID =  'your channelID';
+readkey = 'your readAPIKey';
+writekey = 'your WriteAPIKey';
 warningthing = MException('component:mnemonic', ...
             'msg');
 try
